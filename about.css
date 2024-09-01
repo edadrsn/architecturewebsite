@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: #fff;
+}
+
+/* Header */
+.page-header {
+    background-color: #dba81b;
+    color: #202020;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #000, #333);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.page-header h1 {
+    margin: 0;
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.page-header h1:first-of-type {
+    color: #dba81b;
+}
+
+.page-header h1:last-of-type {
+    color: #fff;
+    font-family: "Abel", sans-serif;
+}
+
+/* Animations */
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* About Section */
+.about {
+    width: 100%;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.about-left,
+.about-right,
+.about-left2 {
+    position: relative;
+}
+
+.about-left h1,
+.about-left2 h1 {
+    font-size: 3rem;
+    color: #dba81b;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+.about-left p,
+.about-left2 p {
+    font-size: 1.4rem;
+    color: #eee;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.about-left button {
+    width: 100%;
+    max-width: 16rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem double #dba81b;
+    color: #dba81b;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-left button:hover {
+    background-color: #dba81b;
+    color: #313133;
+    transform: scale(1.1);
+}
+
+.frame {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 1rem double #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 3rem 0;
+}
+
+.frame:hover {
+    border-color: #dba81b;
+}
+
+.about-text-wrapper {
+    text-align: center;
+    color: #fff;
+}
+
+.about-text-wrapper h1 {
+    font-size: 2.5rem;
+    color: #dba81b;
+    margin-bottom: 1rem;
+}
+
+.about-text-wrapper p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.section-bottom,
+.section-bottom-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #202020;
+}
+
+.section-bottom {
+    flex-direction: column;
+    border-right: none;
+    border-bottom: 1rem solid #dba81b;
+}
+
+.section-bottom h1 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 3rem;
+    color: #555;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+}
+
+.section-bottom h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.section-bottom-2 {
+    border-right: none;
+}
+
+.section-bottom-2 h1 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 3rem;
+    color: #dba81b;
+    letter-spacing: 0.5rem;
+    margin-right: 2rem;
+}
+
+.section-bottom-2 a {
+    color: #dba81b;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-bottom-2 a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #dba81b;
+    background-color: #2e2e2e;
+    height: 5rem;
+    line-height: 5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+    }
+
+    .frame {
+        margin: auto;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .page-header h1 {
+        font-size: 3rem;
+    }
+
+    .about-left h1,
+    .about-left2 h1 {
+        font-size: 2rem;
+    }
+
+    .about-left p,
+    .about-left2 p {
+        font-size: 1.2rem;
+    }
+
+    .about-left button {
+        font-size: 1.2rem;
+    }
+
+    .frame {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-left h1,
+    .about-left2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-left p,
+    .about-left2 p {
+        font-size: 1rem;
+    }
+
+    .about-left button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .section-bottom,
+    .section-bottom-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-bottom h1,
+    .section-bottom-2 h1 {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+
+    .section-bottom-2 a {
+        font-size: 1.5rem;
+    }
+
+    .copyright {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-left h1,
+    .about-left2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-left p,
+    .about-left2 p {
+        font-size: 0.9rem;
+    }
+
+    .about-left button {
+        font-size: 0.9rem;
+    }
+
+    .section-bottom h1,
+    .section-bottom-2 h1 {
+        font-size: 1.2rem;
+    }
+
+    .section-bottom-2 a {
+        font-size: 1.2rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        margin-top: 2rem;
+        height: 5rem;
+    }
+}

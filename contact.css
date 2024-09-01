@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    background-color: #202020;
+    color: #fff;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #000, #333);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #dba81b;
+    text-align: center;
+    padding: 1.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.page-header h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.page-header .hat2 {
+    font-size: 4rem;
+    margin: 0;
+    color: #fff;
+    font-family: "Abel", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Contact */
+.contact {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 50%;
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    color: #dba81b;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #dba81b;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #dba81b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c79518;
+}
+
+/* Social Media and Copyright */
+.social-media {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.social-media h3 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 2.5rem;
+    color: #dba81b;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+    color: #dba81b;
+    font-size: 3rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    background-color: #2e2e2e;
+    color: #dba81b;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+
+    .page-header h1,
+    .hat2 {
+        font-size: 3.5rem;
+    }
+
+    .contact-container {
+        width: 60%;
+    }
+
+    .contact-container h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .page-header h1,
+    .hat2 {
+        font-size: 3rem;
+    }
+
+    .contact-container {
+        width: 70%;
+    }
+
+    .contact-container h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-header h1,
+    .hat2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        width: 80%;
+    }
+
+    .contact-container h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1.3rem;
+    }
+
+    .contact-form button {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .page-header h1,
+    .hat2 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .contact-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-form button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .page-header h1,
+    .hat2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .social-media h3 {
+        font-size: 2rem;
+    }
+
+    .social-icons a {
+        font-size: 2.5rem;
+    }
+}
